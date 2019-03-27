@@ -917,23 +917,82 @@ input[type=number]::-webkit-outer-spin-button {
 /*===================================================
                 OUR BLOG AREA
 ====================================================*/
-.our-blog .post-area {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px; }
-  .our-blog .post-area .post .post-head .post-img {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.72) 0px -57px 11px -10px inset;
-    box-shadow: rgba(0, 0, 0, 0.72) 0px -57px 11px -10px inset; }
-    .our-blog .post-area .post .post-head .post-img img {
-      position: relative;
-      z-index: -1; }
-  .our-blog .post-area .post .post-head .time-date {
-    display: none; }
-  .our-blog .post-area .post .post-head .like {
-    display: none; }
-  .our-blog .post-area .post .post-head .comment {
-    display: none; }
-  .our-blog .post-area .post .post-head .user {
-    display: none; }
+.our-blog {
+  padding: 100px 0; }
+  .our-blog .post-area {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px; }
+    .our-blog .post-area .post .post-head {
+      position: relative; }
+      .our-blog .post-area .post .post-head .post-img {
+        -webkit-box-shadow: rgba(0, 0, 0, 0.72) 0px -57px 11px -10px inset;
+        box-shadow: rgba(0, 0, 0, 0.72) 0px -57px 11px -10px inset; }
+        .our-blog .post-area .post .post-head .post-img img {
+          position: relative;
+          z-index: -1; }
+      .our-blog .post-area .post .post-head .time-date {
+        position: absolute;
+        top: 0;
+        right: 30px; }
+        .our-blog .post-area .post .post-head .time-date ul {
+          list-style: none;
+          display: inline-block;
+          text-align: center; }
+          .our-blog .post-area .post .post-head .time-date ul li {
+            padding: 0px 17px;
+            background: #271f1f;
+            color: #db0; }
+            .our-blog .post-area .post .post-head .time-date ul li.date p {
+              padding-top: 10px;
+              padding-bottom: 3px;
+              font-size: 24px;
+              font-family: 'Lato', sans-serif;
+              font-weight: 900;
+              line-height: 16px; }
+            .our-blog .post-area .post .post-head .time-date ul li.mont p {
+              font-size: 16px;
+              font-family: 'Lato', sans-serif;
+              font-weight: 400;
+              line-height: 16px;
+              padding-bottom: 5px; }
+            .our-blog .post-area .post .post-head .time-date ul li.year {
+              background-color: #db0; }
+              .our-blog .post-area .post .post-head .time-date ul li.year p {
+                font-size: 16px;
+                font-family: 'Lato', sans-serif;
+                font-weight: 700;
+                line-height: 20px;
+                color: #fff;
+                padding-bottom: 5px;
+                padding-top: 5px; }
+      .our-blog .post-area .post .post-head .like {
+        display: none; }
+      .our-blog .post-area .post .post-head .comment {
+        display: none; }
+      .our-blog .post-area .post .post-head .user {
+        display: none; }
+    .our-blog .post-area .post .post-title-dis {
+      padding: 30px; }
+      .our-blog .post-area .post .post-title-dis .title {
+        margin-bottom: 20px; }
+        .our-blog .post-area .post .post-title-dis .title h3 {
+          font-size: 20px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+          color: #000; }
+      .our-blog .post-area .post .post-title-dis .post-dis p {
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        line-height: 26px;
+        color: #707070; }
+        .our-blog .post-area .post .post-title-dis .post-dis p.read {
+          margin-top: 20px;
+          font-size: 16px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+          line-height: 24px;
+          color: #db0; }
