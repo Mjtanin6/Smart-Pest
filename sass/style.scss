@@ -1327,27 +1327,64 @@ input[type=number]::-webkit-outer-spin-button {
                         }
                     }
                 }
-                .like {
-                    display: none;
-
+                .like,
+                .comment,
+                .user {
+                    position: absolute;
+                    bottom: 17px;
+                    
                     ul {
 
                         li {
 
                             a {
+                                color: #fff;
+                                font-size: 16px;
+                                font-family: 'Lato', sans-serif;
+                                font-weight: 400;
+                                text-decoration: none;
+                                transition: all 0.5s ease;
+                                &:hover {
+                                    color: #db0;
+                                }
+
                                 i {}
                             }
                         }
                     }
                 }
-                .comment {
-                    display: none;
+                .like {
+                    left: 30px;
 
                     ul {
 
                         li {
 
                             a {
+ 
+                                &:hover {
+
+                                }
+
+                                i {}
+                            }
+                        }
+                    }
+                }
+                
+                .comment {
+                    left: 100px;
+
+                    ul {
+
+                        li {
+
+                            a {
+
+                                &:hover {
+                                    
+                                }
+
 
                                 i {}
                             }
@@ -1355,7 +1392,8 @@ input[type=number]::-webkit-outer-spin-button {
                     }
                 }
                 .user {
-                    display: none;
+                    right: 30px;
+
 
                     ul {
 
