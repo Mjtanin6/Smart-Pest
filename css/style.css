@@ -26,6 +26,9 @@ body {
   font-size: 16px;
   font-weight: 400; }
 
+.section-all {
+  overflow: hidden; }
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -1034,9 +1037,7 @@ input[type=number]::-webkit-outer-spin-button {
       display: grid;
       -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
-      grid-gap: 30px;
-      position: relative;
-      padding: 110px 0; }
+      grid-gap: 30px; }
       .contuct .contuct-obg .contuct-text-img .text-area {
         -ms-grid-column: 1;
         -ms-grid-column-span: 8;
@@ -1058,7 +1059,7 @@ input[type=number]::-webkit-outer-spin-button {
           line-height: 42px;
           color: #db0; }
         .contuct .contuct-obg .contuct-text-img .text-area .dis {
-          padding-top: 10px; }
+          margin: 10px 0 20px; }
           .contuct .contuct-obg .contuct-text-img .text-area .dis p {
             font-size: 16px;
             font-family: 'Lato', sans-serif;
@@ -1066,7 +1067,7 @@ input[type=number]::-webkit-outer-spin-button {
             line-height: 26px;
             color: #767676; }
         .contuct .contuct-obg .contuct-text-img .text-area .button {
-          padding-top: 40px; }
+          padding-top: 20px; }
           .contuct .contuct-obg .contuct-text-img .text-area .button a {
             font-size: 16px;
             font-family: 'Montserrat', sans-serif;
@@ -1079,7 +1080,4 @@ input[type=number]::-webkit-outer-spin-button {
             background-color: #db0; }
       .contuct .contuct-obg .contuct-text-img .our-img {
         grid-column: 9/-1;
-        margin-top: -75px;
-        position: absolute;
-        bottom: 0;
-        right: -99px; }
+        margin-top: -75px; }

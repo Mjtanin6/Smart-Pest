@@ -30,6 +30,10 @@ body {
   font-size: 16px;
   font-weight: 400; }
 
+  .section-all {
+    overflow: hidden;
+  }
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
@@ -1465,15 +1469,12 @@ input[type=number]::-webkit-outer-spin-button {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             grid-gap: 30px;
-            position: relative;
-            padding: 110px 0;
 
             .text-area {
                 grid-column: 1/9;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-
 
                 .title {
 
@@ -1486,7 +1487,7 @@ input[type=number]::-webkit-outer-spin-button {
                     }
                 }
                 .dis {
-                        padding-top: 10px;
+                        margin: 10px 0 20px;
 
                     p {
                         font-size: 16px;
@@ -1497,7 +1498,7 @@ input[type=number]::-webkit-outer-spin-button {
                     }
                 }
                 .button {
-                        padding-top: 40px;
+                        padding-top: 20px;
 
                     a {
                         font-size: 16px;
@@ -1515,9 +1516,6 @@ input[type=number]::-webkit-outer-spin-button {
             .our-img {
                 grid-column: 9/-1;
                 margin-top: -75px;
-                position: absolute;
-                bottom: 0;
-                right: -99px;
 
                 img {}
             }
