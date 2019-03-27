@@ -1524,3 +1524,47 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
 }
+/*===================================================
+                    PRICE AREA
+====================================================*/
+
+.pricing-area {
+    padding: 100px 0;
+
+    .heading {
+
+        .title {
+
+            h1 {}
+        }
+        .discription {
+
+            p {}
+        }
+    }
+    .pest-prising-table {
+
+        .services-list {
+
+            ul {
+
+                li {
+
+                    &.head {
+
+                        p {
+
+                            .title {
+
+                            }
+                        }
+                    }
+                    &.service {
+
+                        p {}
+                    }
+                }
+            }
+        }
+    }
+}

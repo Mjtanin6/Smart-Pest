@@ -1081,3 +1081,9 @@ input[type=number]::-webkit-outer-spin-button {
       .contuct .contuct-obg .contuct-text-img .our-img {
         grid-column: 9/-1;
         margin-top: -75px; }
+
+/*===================================================
+                    PRICE AREA
+====================================================*/
+.pricing-area {
+  padding: 100px 0; }
