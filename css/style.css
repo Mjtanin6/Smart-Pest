@@ -1019,3 +1019,67 @@ input[type=number]::-webkit-outer-spin-button {
           font-weight: 700;
           line-height: 24px;
           color: #db0; }
+
+/*===================================================
+                    CONUTCT US AREA
+====================================================*/
+.contuct {
+  background-image: url("../images/overview.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .contuct .contuct-obg {
+    background-color: rgba(0, 0, 0, 0.7); }
+    .contuct .contuct-obg .contuct-text-img {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 30px;
+      position: relative;
+      padding: 110px 0; }
+      .contuct .contuct-obg .contuct-text-img .text-area {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 8;
+        grid-column: 1/9;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .contuct .contuct-obg .contuct-text-img .text-area .title h2 {
+          font-size: 32px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+          line-height: 42px;
+          color: #db0; }
+        .contuct .contuct-obg .contuct-text-img .text-area .dis {
+          padding-top: 10px; }
+          .contuct .contuct-obg .contuct-text-img .text-area .dis p {
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            line-height: 26px;
+            color: #767676; }
+        .contuct .contuct-obg .contuct-text-img .text-area .button {
+          padding-top: 40px; }
+          .contuct .contuct-obg .contuct-text-img .text-area .button a {
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 24px;
+            color: #000;
+            padding: 20px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            background-color: #db0; }
+      .contuct .contuct-obg .contuct-text-img .our-img {
+        grid-column: 9/-1;
+        margin-top: -75px;
+        position: absolute;
+        bottom: 0;
+        right: -99px; }
