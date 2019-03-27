@@ -1244,6 +1244,7 @@ input[type=number]::-webkit-outer-spin-button {
 ====================================================*/
 
 .our-blog {
+    padding: 100px 0;
 
     .heading {
 
@@ -1264,6 +1265,7 @@ input[type=number]::-webkit-outer-spin-button {
         .post {
 
             .post-head {
+                position: relative;
 
                 .post-img {
                     box-shadow: rgba(0, 0, 0, 0.72) 0px -57px 11px -10px inset;
@@ -1274,15 +1276,54 @@ input[type=number]::-webkit-outer-spin-button {
                     }
                 }
                 .time-date {
-                    display: none;
+                    position: absolute;
+                    top: 0;
+                    right: 30px;
 
                     ul {
+                        list-style: none;
+                        display: inline-block;
+                        text-align: center;
 
                         li {
+                            padding: 0px 17px;
+                            background: #271f1f;
+                            color: #db0;
 
-                            &.dare {}
-                            &.mont {}
-                            &.year {}
+                            &.date {
+
+                                p{
+                                    padding-top: 10px;
+                                    padding-bottom: 3px;
+                                    font-size: 24px;
+                                    font-family: 'Lato', sans-serif;
+                                    font-weight: 900;
+                                    line-height: 16px;
+                                }
+                            }
+                            &.mont {
+
+                                p {
+                                    font-size: 16px;
+                                    font-family: 'Lato', sans-serif;
+                                    font-weight: 400;
+                                    line-height: 16px;
+                                    padding-bottom: 5px
+                                }
+                            }
+                            &.year {
+                                background-color: #db0;
+
+                                p {
+                                    font-size: 16px;
+                                    font-family: 'Lato', sans-serif;
+                                    font-weight: 700;
+                                    line-height: 20px;
+                                    color: #fff;
+                                    padding-bottom: 5px;
+                                    padding-top: 5px;
+                                }
+                            }
                         }
                     }
                 }
@@ -1329,16 +1370,37 @@ input[type=number]::-webkit-outer-spin-button {
                 }
             }
             .post-title-dis {
+                padding: 30px;
 
                 .title {
+                    margin-bottom: 20px;
 
-                    h3 {}
+                    h3 {
+                        font-size: 20px;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 700;
+                        color: #000;
+
+                    }
                 }
                 .post-dis {
 
                     p {
+                        font-size: 16px;
+                        font-family: 'Lato', sans-serif;
+                        font-weight: 400;
+                        line-height: 26px;
+                        color: #707070;
 
-                        &.read {}
+
+                        &.read {
+                            margin-top: 20px;
+                            font-size: 16px;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 700;
+                            line-height: 24px;
+                            color: #db0;
+                        }
                     }
                 }
             }
