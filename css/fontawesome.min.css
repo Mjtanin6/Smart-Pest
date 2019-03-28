@@ -240,8 +240,11 @@ content: "\f086"; }
 .fa-check:before {
   content: "\f00c"; }
 
-  .fa-times:before {
-  content: "\f00d"; }
+.fa-times:before {
+content: "\f00d"; }
+
+.fa-paper-plane:before {
+content: "\f1d8"; }
 
 .sr-only {
   border: 0;
