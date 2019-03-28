@@ -228,14 +228,20 @@ content: "\f105"; }
 .fa-arrow-circle-right:before {
   content: "\f0a9"; }
 
-  .fa-arrow-circle-left:before {
-  content: "\f0a8"; }
+.fa-arrow-circle-left:before {
+content: "\f0a8"; }
 
-  .fa-thumbs-up:before {
-  content: "\f164"; }
+.fa-thumbs-up:before {
+content: "\f164"; }
 
-  .fa-comments:before {
-  content: "\f086"; }
+.fa-comments:before {
+content: "\f086"; }
+
+.fa-check:before {
+  content: "\f00c"; }
+
+  .fa-times:before {
+  content: "\f00d"; }
 
 .sr-only {
   border: 0;
