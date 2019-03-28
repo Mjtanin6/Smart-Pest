@@ -1092,35 +1092,43 @@ input[type=number]::-webkit-outer-spin-button {
     display: grid;
     -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr); }
-    .pricing-area .pest-prising-table .services-list ul {
+    .pricing-area .pest-prising-table .services-list ul.price-heading {
       list-style: none;
       display: -ms-grid;
       display: grid;
-      -ms-grid-rows: (1fr)[9];
-      grid-template-rows: repeat(9, 1fr);
-      border: 1px solid #ddd;
-      padding-bottom: 60px; }
-      .pricing-area .pest-prising-table .services-list ul li {
-        padding-left: 30px;
-        padding-top: 40px; }
-        .pricing-area .pest-prising-table .services-list ul li.head {
+      -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr; }
+      .pricing-area .pest-prising-table .services-list ul.price-heading li {
+        padding: 30px 40px; }
+        .pricing-area .pest-prising-table .services-list ul.price-heading li.head {
           -ms-grid-row: 1;
           -ms-grid-row-span: 2;
           grid-row: 1/span 2;
+          display: -ms-grid;
+          display: grid;
+          -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr;
           background-color: #ddbb00; }
-          .pricing-area .pest-prising-table .services-list ul li.head p {
+          .pricing-area .pest-prising-table .services-list ul.price-heading li.head p {
             font-size: 16px;
             font-family: 'Lato', sans-serif;
             font-weight: 400;
             line-height: 24px;
             color: #fff; }
-            .pricing-area .pest-prising-table .services-list ul li.head p.title {
+            .pricing-area .pest-prising-table .services-list ul.price-heading li.head p.title {
               font-size: 20px;
               font-family: 'Montserrat', sans-serif;
               font-weight: 700;
               line-height: 24px;
               color: #fff; }
-        .pricing-area .pest-prising-table .services-list ul li.service p {
+    .pricing-area .pest-prising-table .services-list ul.services {
+      list-style: none;
+      border: 1px solid #ddd;
+      padding-bottom: 60px; }
+      .pricing-area .pest-prising-table .services-list ul.services li {
+        padding-left: 30px;
+        padding-top: 40px; }
+        .pricing-area .pest-prising-table .services-list ul.services li.service p {
           font-size: 16px;
           font-family: 'Lato', sans-serif;
           font-weight: 400;
@@ -1129,82 +1137,129 @@ input[type=number]::-webkit-outer-spin-button {
     .pricing-area .pest-prising-table .service-item-basic ul,
     .pricing-area .pest-prising-table .service-item-standard ul,
     .pricing-area .pest-prising-table .service-item-premium ul {
-      list-style: none;
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-rows: (1fr)[9];
-      grid-template-rows: repeat(9, 1fr);
-      border: 1px solid #ddd;
-      padding-bottom: 60px; }
-      .pricing-area .pest-prising-table .service-item-basic ul li,
-      .pricing-area .pest-prising-table .service-item-standard ul li,
-      .pricing-area .pest-prising-table .service-item-premium ul li {
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 40px;
-        text-align: center; }
-        .pricing-area .pest-prising-table .service-item-basic ul li.head,
-        .pricing-area .pest-prising-table .service-item-standard ul li.head,
-        .pricing-area .pest-prising-table .service-item-premium ul li.head {
-          -ms-grid-row: 1;
-          -ms-grid-row-span: 2;
-          grid-row: 1/span 2;
-          background-color: #d78227;
-          display: -ms-grid;
-          display: grid;
-          -ms-grid-columns: 1fr 1fr;
-          grid-template-columns: 1fr 1fr; }
-          .pricing-area .pest-prising-table .service-item-basic ul li.head .title-time,
-          .pricing-area .pest-prising-table .service-item-standard ul li.head .title-time,
-          .pricing-area .pest-prising-table .service-item-premium ul li.head .title-time {
-            text-align: left; }
-            .pricing-area .pest-prising-table .service-item-basic ul li.head .title-time p,
-            .pricing-area .pest-prising-table .service-item-standard ul li.head .title-time p,
-            .pricing-area .pest-prising-table .service-item-premium ul li.head .title-time p {
-              font-size: 16px;
-              font-family: 'Lato', sans-serif;
-              font-weight: 400;
-              line-height: 24px;
-              color: #fff; }
-              .pricing-area .pest-prising-table .service-item-basic ul li.head .title-time p.title,
-              .pricing-area .pest-prising-table .service-item-standard ul li.head .title-time p.title,
-              .pricing-area .pest-prising-table .service-item-premium ul li.head .title-time p.title {
-                font-size: 20px;
+      position: relative; }
+      .pricing-area .pest-prising-table .service-item-basic ul.price-heading,
+      .pricing-area .pest-prising-table .service-item-standard ul.price-heading,
+      .pricing-area .pest-prising-table .service-item-premium ul.price-heading {
+        list-style: none;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr; }
+        .pricing-area .pest-prising-table .service-item-basic ul.price-heading li,
+        .pricing-area .pest-prising-table .service-item-standard ul.price-heading li,
+        .pricing-area .pest-prising-table .service-item-premium ul.price-heading li {
+          padding: 30px 40px; }
+          .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head,
+          .pricing-area .pest-prising-table .service-item-standard ul.price-heading li.head,
+          .pricing-area .pest-prising-table .service-item-premium ul.price-heading li.head {
+            -ms-grid-row: 1;
+            -ms-grid-row-span: 2;
+            grid-row: 1/span 2;
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr; }
+            .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .title-time,
+            .pricing-area .pest-prising-table .service-item-standard ul.price-heading li.head .title-time,
+            .pricing-area .pest-prising-table .service-item-premium ul.price-heading li.head .title-time {
+              text-align: left; }
+              .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .title-time p,
+              .pricing-area .pest-prising-table .service-item-standard ul.price-heading li.head .title-time p,
+              .pricing-area .pest-prising-table .service-item-premium ul.price-heading li.head .title-time p {
+                font-size: 16px;
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                line-height: 24px;
+                color: #fff; }
+                .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .title-time p.title,
+                .pricing-area .pest-prising-table .service-item-standard ul.price-heading li.head .title-time p.title,
+                .pricing-area .pest-prising-table .service-item-premium ul.price-heading li.head .title-time p.title {
+                  font-size: 20px;
+                  font-family: 'Montserrat', sans-serif;
+                  font-weight: 700;
+                  line-height: 24px;
+                  color: #fff; }
+            .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .price,
+            .pricing-area .pest-prising-table .service-item-standard ul.price-heading li.head .price,
+            .pricing-area .pest-prising-table .service-item-premium ul.price-heading li.head .price {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: end;
+              -ms-flex-pack: end;
+              justify-content: flex-end;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center; }
+              .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .price p,
+              .pricing-area .pest-prising-table .service-item-standard ul.price-heading li.head .price p,
+              .pricing-area .pest-prising-table .service-item-premium ul.price-heading li.head .price p {
+                font-size: 32px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 700;
                 line-height: 24px;
                 color: #fff; }
-          .pricing-area .pest-prising-table .service-item-basic ul li.head .price,
-          .pricing-area .pest-prising-table .service-item-standard ul li.head .price,
-          .pricing-area .pest-prising-table .service-item-premium ul li.head .price {
-            text-align: right; }
-            .pricing-area .pest-prising-table .service-item-basic ul li.head .price p,
-            .pricing-area .pest-prising-table .service-item-standard ul li.head .price p,
-            .pricing-area .pest-prising-table .service-item-premium ul li.head .price p {
-              font-size: 32px;
+      .pricing-area .pest-prising-table .service-item-basic ul.services,
+      .pricing-area .pest-prising-table .service-item-standard ul.services,
+      .pricing-area .pest-prising-table .service-item-premium ul.services {
+        list-style: none;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-rows: (1fr)[7];
+        grid-template-rows: repeat(7, 1fr);
+        border: 1px solid #ddd;
+        padding-bottom: 60px; }
+        .pricing-area .pest-prising-table .service-item-basic ul.services li,
+        .pricing-area .pest-prising-table .service-item-standard ul.services li,
+        .pricing-area .pest-prising-table .service-item-premium ul.services li {
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-top: 40px;
+          text-align: center; }
+          .pricing-area .pest-prising-table .service-item-basic ul.services li.correct p,
+          .pricing-area .pest-prising-table .service-item-standard ul.services li.correct p,
+          .pricing-area .pest-prising-table .service-item-premium ul.services li.correct p {
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            line-height: 24px;
+            color: #399f06; }
+          .pricing-area .pest-prising-table .service-item-basic ul.services li.wrong p,
+          .pricing-area .pest-prising-table .service-item-standard ul.services li.wrong p,
+          .pricing-area .pest-prising-table .service-item-premium ul.services li.wrong p {
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            line-height: 24px;
+            color: #f02020; }
+          .pricing-area .pest-prising-table .service-item-basic ul.services li.button,
+          .pricing-area .pest-prising-table .service-item-standard ul.services li.button,
+          .pricing-area .pest-prising-table .service-item-premium ul.services li.button {
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+            right: 0; }
+            .pricing-area .pest-prising-table .service-item-basic ul.services li.button a,
+            .pricing-area .pest-prising-table .service-item-standard ul.services li.button a,
+            .pricing-area .pest-prising-table .service-item-premium ul.services li.button a {
+              padding: 15px 40px;
+              border: 1px solid #ddd;
+              background: #fff;
+              border-radius: 30px;
+              text-decoration: none;
+              font-size: 16px;
               font-family: 'Montserrat', sans-serif;
               font-weight: 700;
               line-height: 24px;
-              color: #fff; }
-        .pricing-area .pest-prising-table .service-item-basic ul li.correct p,
-        .pricing-area .pest-prising-table .service-item-standard ul li.correct p,
-        .pricing-area .pest-prising-table .service-item-premium ul li.correct p {
-          font-size: 16px;
-          font-family: 'Lato', sans-serif;
-          font-weight: 400;
-          line-height: 24px;
-          color: #399f06; }
-        .pricing-area .pest-prising-table .service-item-basic ul li.wrong p,
-        .pricing-area .pest-prising-table .service-item-standard ul li.wrong p,
-        .pricing-area .pest-prising-table .service-item-premium ul li.wrong p {
-          font-size: 16px;
-          font-family: 'Lato', sans-serif;
-          font-weight: 400;
-          line-height: 24px;
-          color: #f02020; }
-    .pricing-area .pest-prising-table .service-item-basic ul li.head {
+              color: #000; }
+    .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head {
       background-color: #d78227; }
-    .pricing-area .pest-prising-table .service-item-standard ul li.head {
+    .pricing-area .pest-prising-table .service-item-standard ul.price-heading li.head {
       background-color: #2491d6; }
-    .pricing-area .pest-prising-table .service-item-premium ul li.head {
+    .pricing-area .pest-prising-table .service-item-standard ul.services li.button a {
+      border: 1px solid #0087dd;
+      background: #0087dd;
+      color: #fff; }
+    .pricing-area .pest-prising-table .service-item-premium ul.price-heading li.head {
       background-color: #6c1fdf; }

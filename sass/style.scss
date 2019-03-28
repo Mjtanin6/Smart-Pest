@@ -1549,78 +1549,20 @@ input[type=number]::-webkit-outer-spin-button {
         .services-list {
 
             ul {
-                list-style: none;
-                display: grid;
-                grid-template-rows: repeat(9, 1fr);
-                border: 1px solid #ddd;
-                padding-bottom: 60px;
 
-                li {
-                    padding-left: 30px;
-                    padding-top: 40px;
+                &.price-heading {
+                    list-style: none;
+                    display: grid;
+                    grid-template-rows: 1fr;
 
-                    &.head {
-                        grid-row: 1/span 2;
-                        background-color: #ddbb00;
+                    li {
+                        padding: 30px 40px;
 
-
-                        p {
-                            font-size: 16px;
-                             font-family: 'Lato', sans-serif;
-                            font-weight: 400;
-                            line-height: 24px;
-                            color: #fff;
-
-                            &.title {
-                                font-size: 20px;
-                                font-family: 'Montserrat', sans-serif;
-                                font-weight: 700;
-                                line-height: 24px;
-                                color: #fff;
-                            }
-                        }
-                    }
-                    &.service {
-
-                        p {
-                            font-size: 16px;
-                             font-family: 'Lato', sans-serif;
-                            font-weight: 400;
-                            line-height: 24px;
-                            color: #707070;
-                        }
-                    }
-                }
-            }
-        }
-        .service-item-basic,
-        .service-item-standard,
-        .service-item-premium {
-
-
-            ul {
-                list-style: none;
-                display: grid;
-                grid-template-rows: repeat(9, 1fr);
-                border: 1px solid #ddd;
-                padding-bottom: 60px;
-
-                li {
-                    padding-left: 30px;
-                    padding-right: 30px;
-                    padding-top: 40px;
-                    text-align: center;
-                    
-
-                    &.head {
-                        grid-row: 1/span 2;
-                        background-color: #d78227;
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-
-
-                        .title-time {
-                            text-align: left;
+                        &.head {
+                            grid-row: 1/span 2;
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            background-color: #ddbb00;
 
                             p {
                                 font-size: 16px;
@@ -1637,84 +1579,173 @@ input[type=number]::-webkit-outer-spin-button {
                                     color: #fff;
                                 }
                             }
-                            
                         }
-                        .price {
-                            text-align: right;
-                            
+                    }
+                }
+                &.services {
+                    list-style: none;
+                    border: 1px solid #ddd;
+                    padding-bottom: 60px;
+    
+                    li {
+                        padding-left: 30px;
+                        padding-top: 40px;
+
+                        &.service {
+
                             p {
-                                font-size: 32px;
-                                font-family: 'Montserrat', sans-serif;
-                                font-weight: 700;
+                                font-size: 16px;
+                                 font-family: 'Lato', sans-serif;
+                                font-weight: 400;
                                 line-height: 24px;
-                                color: #fff;
+                                color: #707070;
                             }
-                        }
-
-                    }
-                    &.correct {
-
-                        p {
-                            font-size: 16px;
-                             font-family: 'Lato', sans-serif;
-                            font-weight: 400;
-                            line-height: 24px;
-                            color: #399f06;
-                        }
-                    }
-                    &.wrong {
-
-                        p {
-                            font-size: 16px;
-                             font-family: 'Lato', sans-serif;
-                            font-weight: 400;
-                            line-height: 24px;
-                            color: #f02020;
                         }
                     }
                 }
             }
         }
-        .service-item-basic {
+        
+        .service-item-basic,
+        .service-item-standard,
+        .service-item-premium {
 
+            ul {
+                position: relative;
+
+                &.price-heading {
+                    list-style: none;
+                    display: grid;
+                    grid-template-rows: 1fr;
+
+                    li {
+                        padding: 30px 40px;
+
+                        &.head {
+                            grid-row: 1/span 2;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            .title-time {
+                                text-align: left;
+
+                                p {
+                                    font-size: 16px;
+                                     font-family: 'Lato', sans-serif;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    color: #fff;
+
+                                    &.title {
+                                        font-size: 20px;
+                                        font-family: 'Montserrat', sans-serif;
+                                        font-weight: 700;
+                                        line-height: 24px;
+                                        color: #fff;
+                                    }
+                                }
+                                
+                            }
+                            .price {
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: center;
+                                
+                                p {
+                                    font-size: 32px;
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-weight: 700;
+                                    line-height: 24px;
+                                    color: #fff;
+                                }
+                            }
+
+                        }
+                    }
+
+                }
+
+                &.services {
+                    list-style: none;
+                    display: grid;
+                    grid-template-rows: repeat(7, 1fr);
+                    border: 1px solid #ddd;
+                    padding-bottom: 60px;
+
+                    li {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        padding-top: 40px;
+                        text-align: center;
+
+                        &.correct {
+
+                            p {
+                                font-size: 16px;
+                                 font-family: 'Lato', sans-serif;
+                                font-weight: 400;
+                                line-height: 24px;
+                                color: #399f06;
+                            }
+                        }
+                        &.wrong {
+
+                            p {
+                                font-size: 16px;
+                                 font-family: 'Lato', sans-serif;
+                                font-weight: 400;
+                                line-height: 24px;
+                                color: #f02020;
+                            }
+                        }
+                        &.button {
+                            position: absolute;
+                            bottom: -12px;
+                            left: 0;
+                            right: 0;
+
+                            a {
+                                padding: 15px 40px;
+                                border: 1px solid #ddd;
+                                background: #fff;
+                                border-radius: 30px;
+                                text-decoration: none;
+                                font-size: 16px;
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 700;
+                                line-height: 24px;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        .service-item-basic {
 
             ul {
 
-                li {
-                    
+                &.price-heading {
 
-                    &.head {
-                        background-color: #d78227;
+                    li {
 
+                        &.head {
 
-                        .title-time {
+                            background-color: #d78227;
+                            .title-time {
 
-                            p {
+                                p {
 
-                                &.title {
+                                    &.title {
 
+                                    }
                                 }
+                                
                             }
-                            
-                        }
-                        .price {
-                            
-                            p {
-
+                            .price {
+                                
+                                p {}
                             }
-                        }
-
-                    }
-                    &.correct {
-
-                        p {
-
-                        }
-                    }
-                    &.wrong {
-
-                        p {
-
                         }
                     }
                 }
@@ -1722,43 +1753,54 @@ input[type=number]::-webkit-outer-spin-button {
         }
         .service-item-standard {
 
-
             ul {
 
-                li {
-                    
+                &.price-heading {
 
-                    &.head {
-                        background-color: #2491d6;
+                    li {
 
-                        .title-time {
+                        &.head {
 
-                            p {
+                            background-color: #2491d6;
+                            .title-time {
 
-                                &.title {
+                                p {
 
+                                    &.title {
+
+                                    }
                                 }
+                                
                             }
-                            
+                            .price {
+                                
+                                p {}
+                            }
                         }
-                        .price {
-                            
+                    }
+                }
+                &.services {
+
+                    li {
+
+                        &.correct {
+
                             p {
 
                             }
                         }
+                        &.wrong {
 
-                    }
-                    &.correct {
-
-                        p {
-
+                            p {
+                            }
                         }
-                    }
-                    &.wrong {
+                        &.button {
 
-                        p {
-
+                            a {
+                                border: 1px solid #0087dd;
+                                background: #0087dd;
+                                color: #fff;
+                            }
                         }
                     }
                 }
@@ -1766,49 +1808,33 @@ input[type=number]::-webkit-outer-spin-button {
         }
         .service-item-premium {
 
-
             ul {
 
-                li {
-                    
+                &.price-heading {
 
-                    &.head {
-                        background-color: #6c1fdf;
+                    li {
 
+                        &.head {
 
-                        .title-time {
+                            background-color: #6c1fdf;
+                            .title-time {
 
-                            p {
+                                p {
 
-                                &.title {
+                                    &.title {
 
+                                    }
                                 }
+                                
                             }
-                            
-                        }
-                        .price {
-                            
-                            p {
-
+                            .price {
+                                
+                                p {}
                             }
-                        }
-
-                    }
-                    &.correct {
-
-                        p {
-
-                        }
-                    }
-                    &.wrong {
-
-                        p {
-
                         }
                     }
                 }
             }
         }
-        
     }
 }
