@@ -30,6 +30,10 @@ body {
   font-size: 16px;
   font-weight: 400; }
 
+  .section-all {
+    overflow: hidden;
+  }
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
@@ -1446,5 +1450,365 @@ input[type=number]::-webkit-outer-spin-button {
                 }
             }
         }
+    }
+}
+
+/*===================================================
+                    CONUTCT US AREA
+====================================================*/
+
+.contuct {
+    background-image: url("../images/overview.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .contuct-obg {
+        background-color: rgba(0, 0, 0, 0.7);
+
+        .contuct-text-img {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 30px;
+
+            .text-area {
+                grid-column: 1/9;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .title {
+
+                    h2 {
+                        font-size: 32px;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 700;
+                        line-height: 42px;
+                        color: #db0;
+                    }
+                }
+                .dis {
+                        margin: 10px 0 20px;
+
+                    p {
+                        font-size: 16px;
+                        font-family: 'Lato', sans-serif;
+                        font-weight: 400;
+                        line-height: 26px;
+                        color: #767676;
+                    }
+                }
+                .button {
+                        padding-top: 20px;
+
+                    a {
+                        font-size: 16px;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 700;
+                        line-height: 24px;
+                        color: #000;
+                        padding: 20px 40px;
+                        border-radius: 30px;
+                        text-decoration: none;
+                        background-color: #db0;
+                    }
+                }
+            }
+            .our-img {
+                grid-column: 9/-1;
+                margin-top: -75px;
+
+                img {}
+            }
+        }
+
+    }
+
+}
+/*===================================================
+                    PRICE AREA
+====================================================*/
+
+.pricing-area {
+    padding: 100px 0;
+
+    .heading {
+
+        .title {
+
+            h1 {}
+        }
+        .discription {
+
+            p {}
+        }
+    }
+    .pest-prising-table {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        .services-list {
+
+            ul {
+                list-style: none;
+                display: grid;
+                grid-template-rows: repeat(9, 1fr);
+                border: 1px solid #ddd;
+                padding-bottom: 60px;
+
+                li {
+                    padding-left: 30px;
+                    padding-top: 40px;
+
+                    &.head {
+                        grid-row: 1/span 2;
+                        background-color: #ddbb00;
+
+
+                        p {
+                            font-size: 16px;
+                             font-family: 'Lato', sans-serif;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: #fff;
+
+                            &.title {
+                                font-size: 20px;
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 700;
+                                line-height: 24px;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    &.service {
+
+                        p {
+                            font-size: 16px;
+                             font-family: 'Lato', sans-serif;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: #707070;
+                        }
+                    }
+                }
+            }
+        }
+        .service-item-basic,
+        .service-item-standard,
+        .service-item-premium {
+
+
+            ul {
+                list-style: none;
+                display: grid;
+                grid-template-rows: repeat(9, 1fr);
+                border: 1px solid #ddd;
+                padding-bottom: 60px;
+
+                li {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    padding-top: 40px;
+                    text-align: center;
+                    
+
+                    &.head {
+                        grid-row: 1/span 2;
+                        background-color: #d78227;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+
+
+                        .title-time {
+                            text-align: left;
+
+                            p {
+                                font-size: 16px;
+                                 font-family: 'Lato', sans-serif;
+                                font-weight: 400;
+                                line-height: 24px;
+                                color: #fff;
+
+                                &.title {
+                                    font-size: 20px;
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-weight: 700;
+                                    line-height: 24px;
+                                    color: #fff;
+                                }
+                            }
+                            
+                        }
+                        .price {
+                            text-align: right;
+                            
+                            p {
+                                font-size: 32px;
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 700;
+                                line-height: 24px;
+                                color: #fff;
+                            }
+                        }
+
+                    }
+                    &.correct {
+
+                        p {
+                            font-size: 16px;
+                             font-family: 'Lato', sans-serif;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: #399f06;
+                        }
+                    }
+                    &.wrong {
+
+                        p {
+                            font-size: 16px;
+                             font-family: 'Lato', sans-serif;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: #f02020;
+                        }
+                    }
+                }
+            }
+        }
+        .service-item-basic {
+
+
+            ul {
+
+                li {
+                    
+
+                    &.head {
+                        background-color: #d78227;
+
+
+                        .title-time {
+
+                            p {
+
+                                &.title {
+
+                                }
+                            }
+                            
+                        }
+                        .price {
+                            
+                            p {
+
+                            }
+                        }
+
+                    }
+                    &.correct {
+
+                        p {
+
+                        }
+                    }
+                    &.wrong {
+
+                        p {
+
+                        }
+                    }
+                }
+            }
+        }
+        .service-item-standard {
+
+
+            ul {
+
+                li {
+                    
+
+                    &.head {
+                        background-color: #2491d6;
+
+                        .title-time {
+
+                            p {
+
+                                &.title {
+
+                                }
+                            }
+                            
+                        }
+                        .price {
+                            
+                            p {
+
+                            }
+                        }
+
+                    }
+                    &.correct {
+
+                        p {
+
+                        }
+                    }
+                    &.wrong {
+
+                        p {
+
+                        }
+                    }
+                }
+            }
+        }
+        .service-item-premium {
+
+
+            ul {
+
+                li {
+                    
+
+                    &.head {
+                        background-color: #6c1fdf;
+
+
+                        .title-time {
+
+                            p {
+
+                                &.title {
+
+                                }
+                            }
+                            
+                        }
+                        .price {
+                            
+                            p {
+
+                            }
+                        }
+
+                    }
+                    &.correct {
+
+                        p {
+
+                        }
+                    }
+                    &.wrong {
+
+                        p {
+
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }

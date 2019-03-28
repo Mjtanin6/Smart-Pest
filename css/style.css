@@ -26,6 +26,9 @@ body {
   font-size: 16px;
   font-weight: 400; }
 
+.section-all {
+  overflow: hidden; }
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -1019,3 +1022,189 @@ input[type=number]::-webkit-outer-spin-button {
           font-weight: 700;
           line-height: 24px;
           color: #db0; }
+
+/*===================================================
+                    CONUTCT US AREA
+====================================================*/
+.contuct {
+  background-image: url("../images/overview.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .contuct .contuct-obg {
+    background-color: rgba(0, 0, 0, 0.7); }
+    .contuct .contuct-obg .contuct-text-img {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 30px; }
+      .contuct .contuct-obg .contuct-text-img .text-area {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 8;
+        grid-column: 1/9;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .contuct .contuct-obg .contuct-text-img .text-area .title h2 {
+          font-size: 32px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+          line-height: 42px;
+          color: #db0; }
+        .contuct .contuct-obg .contuct-text-img .text-area .dis {
+          margin: 10px 0 20px; }
+          .contuct .contuct-obg .contuct-text-img .text-area .dis p {
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            line-height: 26px;
+            color: #767676; }
+        .contuct .contuct-obg .contuct-text-img .text-area .button {
+          padding-top: 20px; }
+          .contuct .contuct-obg .contuct-text-img .text-area .button a {
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 24px;
+            color: #000;
+            padding: 20px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            background-color: #db0; }
+      .contuct .contuct-obg .contuct-text-img .our-img {
+        grid-column: 9/-1;
+        margin-top: -75px; }
+
+/*===================================================
+                    PRICE AREA
+====================================================*/
+.pricing-area {
+  padding: 100px 0; }
+  .pricing-area .pest-prising-table {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr); }
+    .pricing-area .pest-prising-table .services-list ul {
+      list-style: none;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-rows: (1fr)[9];
+      grid-template-rows: repeat(9, 1fr);
+      border: 1px solid #ddd;
+      padding-bottom: 60px; }
+      .pricing-area .pest-prising-table .services-list ul li {
+        padding-left: 30px;
+        padding-top: 40px; }
+        .pricing-area .pest-prising-table .services-list ul li.head {
+          -ms-grid-row: 1;
+          -ms-grid-row-span: 2;
+          grid-row: 1/span 2;
+          background-color: #ddbb00; }
+          .pricing-area .pest-prising-table .services-list ul li.head p {
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            line-height: 24px;
+            color: #fff; }
+            .pricing-area .pest-prising-table .services-list ul li.head p.title {
+              font-size: 20px;
+              font-family: 'Montserrat', sans-serif;
+              font-weight: 700;
+              line-height: 24px;
+              color: #fff; }
+        .pricing-area .pest-prising-table .services-list ul li.service p {
+          font-size: 16px;
+          font-family: 'Lato', sans-serif;
+          font-weight: 400;
+          line-height: 24px;
+          color: #707070; }
+    .pricing-area .pest-prising-table .service-item-basic ul,
+    .pricing-area .pest-prising-table .service-item-standard ul,
+    .pricing-area .pest-prising-table .service-item-premium ul {
+      list-style: none;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-rows: (1fr)[9];
+      grid-template-rows: repeat(9, 1fr);
+      border: 1px solid #ddd;
+      padding-bottom: 60px; }
+      .pricing-area .pest-prising-table .service-item-basic ul li,
+      .pricing-area .pest-prising-table .service-item-standard ul li,
+      .pricing-area .pest-prising-table .service-item-premium ul li {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 40px;
+        text-align: center; }
+        .pricing-area .pest-prising-table .service-item-basic ul li.head,
+        .pricing-area .pest-prising-table .service-item-standard ul li.head,
+        .pricing-area .pest-prising-table .service-item-premium ul li.head {
+          -ms-grid-row: 1;
+          -ms-grid-row-span: 2;
+          grid-row: 1/span 2;
+          background-color: #d78227;
+          display: -ms-grid;
+          display: grid;
+          -ms-grid-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1fr; }
+          .pricing-area .pest-prising-table .service-item-basic ul li.head .title-time,
+          .pricing-area .pest-prising-table .service-item-standard ul li.head .title-time,
+          .pricing-area .pest-prising-table .service-item-premium ul li.head .title-time {
+            text-align: left; }
+            .pricing-area .pest-prising-table .service-item-basic ul li.head .title-time p,
+            .pricing-area .pest-prising-table .service-item-standard ul li.head .title-time p,
+            .pricing-area .pest-prising-table .service-item-premium ul li.head .title-time p {
+              font-size: 16px;
+              font-family: 'Lato', sans-serif;
+              font-weight: 400;
+              line-height: 24px;
+              color: #fff; }
+              .pricing-area .pest-prising-table .service-item-basic ul li.head .title-time p.title,
+              .pricing-area .pest-prising-table .service-item-standard ul li.head .title-time p.title,
+              .pricing-area .pest-prising-table .service-item-premium ul li.head .title-time p.title {
+                font-size: 20px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                line-height: 24px;
+                color: #fff; }
+          .pricing-area .pest-prising-table .service-item-basic ul li.head .price,
+          .pricing-area .pest-prising-table .service-item-standard ul li.head .price,
+          .pricing-area .pest-prising-table .service-item-premium ul li.head .price {
+            text-align: right; }
+            .pricing-area .pest-prising-table .service-item-basic ul li.head .price p,
+            .pricing-area .pest-prising-table .service-item-standard ul li.head .price p,
+            .pricing-area .pest-prising-table .service-item-premium ul li.head .price p {
+              font-size: 32px;
+              font-family: 'Montserrat', sans-serif;
+              font-weight: 700;
+              line-height: 24px;
+              color: #fff; }
+        .pricing-area .pest-prising-table .service-item-basic ul li.correct p,
+        .pricing-area .pest-prising-table .service-item-standard ul li.correct p,
+        .pricing-area .pest-prising-table .service-item-premium ul li.correct p {
+          font-size: 16px;
+          font-family: 'Lato', sans-serif;
+          font-weight: 400;
+          line-height: 24px;
+          color: #399f06; }
+        .pricing-area .pest-prising-table .service-item-basic ul li.wrong p,
+        .pricing-area .pest-prising-table .service-item-standard ul li.wrong p,
+        .pricing-area .pest-prising-table .service-item-premium ul li.wrong p {
+          font-size: 16px;
+          font-family: 'Lato', sans-serif;
+          font-weight: 400;
+          line-height: 24px;
+          color: #f02020; }
+    .pricing-area .pest-prising-table .service-item-basic ul li.head {
+      background-color: #d78227; }
+    .pricing-area .pest-prising-table .service-item-standard ul li.head {
+      background-color: #2491d6; }
+    .pricing-area .pest-prising-table .service-item-premium ul li.head {
+      background-color: #6c1fdf; }
