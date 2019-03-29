@@ -101,4 +101,59 @@
   .about {
     padding-bottom: 50px; }
   .testimonial .tem-obg .slider.tem-slider .single-person {
-    padding: 120px 0 100px; } }
+    padding: 120px 0 100px; }
+  .pricing-area .pest-prising-table .services-list ul.price-heading li.head .price p, .pricing-area .pest-prising-table .service-item-standard ul.price-heading li.head .price p, .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .price p, .pricing-area .pest-prising-table .service-item-premium ul.price-heading li.head .price p {
+    font-size: 20px; }
+  .pricing-area .pest-prising-table .service-item-basic ul.price-heading li, .pricing-area .pest-prising-table .service-item-standard ul.price-heading li, .pricing-area .pest-prising-table .service-item-premium ul.price-heading li, .pricing-area .pest-prising-table .services-list ul.price-heading li {
+    padding: 10px; }
+  .pricing-area .pest-prising-table .service-item-basic ul.services li.button a, .pricing-area .pest-prising-table .service-item-standard ul.services li.button a, .pricing-area .pest-prising-table .service-item-premium ul.services li.button a {
+    padding: 10px;
+    border-radius: 20px; }
+  .pricing-area .pest-prising-table .services-list ul.services li {
+    padding-left: 30px;
+    padding-top: 33px; }
+  .question .qut-obg .fqut-area {
+    -ms-grid-columns: inherit;
+    grid-template-columns: inherit;
+    -ms-grid-rows: (1fr)[2];
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px; }
+  .question .qut-obg .fqut-area .send-email {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    grid-column: inherit; }
+  .question .qut-obg .fqut-area .text {
+    grid-column: inherit;
+    text-align: center; }
+  .contuct-area .contucts-methord {
+    -ms-grid-columns: (1fr)[12];
+    grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; }
+  .contuct-area .contucts-methord .phone {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 1;
+    grid-row: 1; }
+  .contuct-area .contucts-methord .email {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 5;
+    grid-column: 4/9;
+    -ms-grid-row: 1;
+    grid-row: 1; }
+  .contuct-area .contucts-methord .location {
+    grid-column: 9/-1;
+    -ms-grid-row: 1;
+    grid-row: 1; }
+  .contuct-area .contucts-methord button.contuctus {
+    grid-column: 5/-1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    width: 150px;
+    height: 35px; } }
+
+@media only screen and (max-width: 425px) {
+  .header .navbar {
+    position: inherit; } }
