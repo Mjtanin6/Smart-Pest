@@ -21,6 +21,9 @@ $('.slider-forg').slick({
    arrows: false,
    focusOnSelect: true,
    vertical: true
+
+
+
  });
  
 $('.counter').counterUp({

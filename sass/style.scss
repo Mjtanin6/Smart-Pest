@@ -1624,8 +1624,8 @@ input[type=number]::-webkit-outer-spin-button {
             }
         }
         
-        .service-item-basic,
         .service-item-standard,
+        .service-item-basic,
         .service-item-premium {
             transition: all 0.5s ease;
 
@@ -1638,14 +1638,11 @@ input[type=number]::-webkit-outer-spin-button {
 
                 &.price-heading {
                     list-style: none;
-                    display: grid;
-                    grid-template-rows: 1fr;
 
                     li {
                         padding: 30px 40px;
 
                         &.head {
-                            grid-row: 1/span 2;
                             display: grid;
                             grid-template-columns: 1fr 1fr;
                             .title-time {

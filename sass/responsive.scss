@@ -18,4 +18,123 @@
 	    height: 35px;
 	    width: 35px;
 	}
+	.our-services .services-area .services .service {
+	    margin-bottom: 23px;
+	}
+	.our-services .services-area .services .service .ser-content .title {
+	    margin-top: 15px;
+	    margin-bottom: 15px;
+	}
+	.our-services .services-area .services .service .ser-content .btn {
+	     margin-bottom: 0px; 
+	}
+	.our-services .services-area .services .service .ser-content .ser-dis p {
+	    padding: 0 30px;
+	}
+	.about .slider-nav .about-content .content-text .dis p {
+	    line-height: 20px;
+	}
+	.about .slider-nav .about-content .content-text .title h4 {
+	    font-size: 19px;
+	}
+	.about .slider-nav .about-content .content-text {
+	    padding: 15px 0px 15px 15px;
+	    grid-column: 1/12;
+	}
+	.about .slider-nav .about-content .icon {
+	    grid-column: 12/-1;
+	}
+	.our-team .team-slider .slider.members .member .member-dit .name-pos {
+    	padding: 10px 0px 10px 10px;
+	}
+    .latest-project .lat-pro-cat-img .latest-images .image a span:after {
+	    font-size: 25px;
+	    padding: 8px 15px;
+	}
+	.sendsms .sendsms-obg .sendsms-text-img .text-area {
+	    padding: 53px 0;
+	}
+	.sendsms .sendsms-obg .sendsms-text-img .our-img {
+	    position: relative;
+	}
+	.sendsms .sendsms-obg .sendsms-text-img .our-img img {
+	    width: 100%;
+	    bottom: 0;
+	    position: absolute;
+	}
+	.pricing-area .pest-prising-table .service-item-basic ul.price-heading li,
+	.pricing-area .pest-prising-table .service-item-standard ul.price-heading li,
+	.pricing-area .pest-prising-table .service-item-premium ul.price-heading li,
+	.pricing-area .pest-prising-table .services-list ul.price-heading li {
+	    padding: 20px;
+	}
+	.pricing-area .pest-prising-table .service-item-basic ul.services li.button a,
+	.pricing-area .pest-prising-table .service-item-standard ul.services li.button a,
+	.pricing-area .pest-prising-table .service-item-premium ul.services li.button a {
+	    padding: 15px 30px;
+	}
+	.contuct-area .contucts-methord .location {
+	    grid-column: 7/10;
+	}
+	.contuct-area .contucts-methord button.contuctus {
+	    grid-column: 10/-1;
+	}
+}
+
+@media only screen and (max-width: 768px)  {
+	.header .top-bar .quick-contact li a {
+	    font-size: 10px;
+	}
+	.header .navbar .collapse ul li a {
+	    padding: 18px 7px;
+	}
+	.header .navbar {
+	    bottom: -48px;
+	}
+	.banner-area .apnt-form {
+	    padding: 50px 0;
+	}
+	.banner-area .apnt-form form {
+	    grid-gap: 10px;
+	}
+	.banner-area .apnt-form form input[type="text"], .banner-area .apnt-form form input[type="email"], .banner-area .apnt-form form input[type="number"] {
+	    padding: 10px;
+	    height: 35px;
+	}
+	.banner-area .apnt-form form select#location {
+	    padding: 5px;
+	    height: 35px;
+	}
+	.banner-area .banner .banner-img {
+	    padding-top: 100px;
+	}
+	.banner-area .banner .banner-img .banner-content h1 {
+	    font-size: 35px;
+	    line-height: 40px;
+        padding-bottom: 15px;
+	}
+	.banner-area .banner .banner-img .banner-content .btn {
+	    margin-top: 30px;
+	}
+	.banner-area .banner .banner-img .banner-content {
+	    padding-bottom: 175px;
+	}
+	.banner-area .apnt-form form input[type="submit"] {
+	    padding: 8px 40px;
+	}
+	.our-services .services-area .our-identity {
+	    margin-bottom: 25px;
+	}
+	.about .slider-nav .about-content .content-text {
+		padding: 30px 0px 30px 30px;
+  	}
+  	.slider-img {
+	    margin-bottom: 30px;
+	}
+	.about {
+	    padding-bottom: 50px;
+	}
+	.testimonial .tem-obg .slider.tem-slider .single-person {
+	    padding: 120px 0 100px;
+	}
 }
