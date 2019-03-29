@@ -2110,3 +2110,106 @@ input[type=number]::-webkit-outer-spin-button {
         }
     }
 }
+
+/*===================================================
+                    footer AREA
+====================================================*/
+
+.footer {
+
+    .footer-top {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+
+        .smart-pest {
+
+            .icon {
+
+                i {}
+            }
+            .title {
+
+                h1 {}
+            }
+            .dis {
+
+                p {}
+            }
+            .social-link {
+
+                ul {
+
+                    li {
+
+                        a {
+
+                            i {}
+                        }
+                    }
+                }
+            }
+        }
+        .usefulllink {
+
+            .use-title {
+
+                h1 {}
+            }
+            .link {
+
+                ul {
+
+                    lu {
+
+                        a {}
+                    }
+                }
+            }
+        }
+        .recentnews {
+
+            .sin-news {
+
+                .news-title {
+
+                    .news-ing {
+
+                        img {}
+                    }
+                }
+                .news-text {
+
+                    h3 {}
+                    p {}
+                }
+            }
+        }
+        .services {
+
+            .ser-title {
+
+                h1 {}
+            }
+            .service {
+
+                ul {
+
+                    li {}
+                }
+            }
+        }
+    }
+    .footer-bottom {
+
+        .copyright {
+
+            p {}
+        }
+        .gotp-top {
+
+            i {}
+            p {}
+        }
+    }
+}
