@@ -246,6 +246,18 @@ content: "\f00d"; }
 .fa-paper-plane:before {
 content: "\f1d8"; }
 
+.fa-facebook-f:before {
+  content: "\f39e"; }
+
+.fa-youtube:before {
+content: "\f167"; }
+
+.fa-twitter-square:before {
+  content: "\f081"; }
+
+.fa-arrow-up:before {
+  content: "\f062"; }
+
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
