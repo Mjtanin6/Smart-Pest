@@ -230,73 +230,82 @@ input[type=number]::-webkit-outer-spin-button {
 /*===================================================
                       BANNER AREA
   ====================================================*/
-.banner .slick-next {
-  right: 0;
-  z-index: 999; }
-
-.banner .slick-prev {
-  left: 0; }
-
-.banner .slick-next {
-  right: 0; }
-
-.banner .banner-img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 250px; }
-  .banner .banner-img .banner-content h1 {
-    font-size: 60px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: #fff;
-    line-height: 70px;
-    padding-bottom: 20px; }
-    .banner .banner-img .banner-content h1 span {
-      color: #ddbb00; }
-  .banner .banner-img .banner-content p {
-    font-size: 30px;
-    font-family: 'Lato', sans-serif;
-    line-height: 24px;
-    color: #fff;
-    font-weight: 700; }
-  .banner .banner-img .banner-content .btn {
-    margin-top: 50px; }
-    .banner .banner-img .banner-content .btn.ban-btn {
-      background: #ddbb00;
-      border-radius: 30px; }
-      .banner .banner-img .banner-content .btn.ban-btn a {
-        text-decoration: none;
+.banner-area {
+  position: relative; }
+  .banner-area .banner .slick-next {
+    right: 0;
+    z-index: 999; }
+  .banner-area .banner .slick-prev {
+    left: 0; }
+  .banner-area .banner .slick-next {
+    right: 0; }
+  .banner-area .banner .banner-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 250px; }
+    .banner-area .banner .banner-img .banner-content {
+      padding-bottom: 300px; }
+      .banner-area .banner .banner-img .banner-content h1 {
+        font-size: 60px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: #fff;
+        line-height: 70px;
+        padding-bottom: 20px; }
+        .banner-area .banner .banner-img .banner-content h1 span {
+          color: #ddbb00; }
+      .banner-area .banner .banner-img .banner-content p {
+        font-size: 30px;
+        font-family: 'Lato', sans-serif;
+        line-height: 24px;
+        color: #fff;
+        font-weight: 700; }
+      .banner-area .banner .banner-img .banner-content .btn {
+        margin-top: 50px; }
+        .banner-area .banner .banner-img .banner-content .btn.ban-btn {
+          background: #ddbb00;
+          border-radius: 30px; }
+          .banner-area .banner .banner-img .banner-content .btn.ban-btn a {
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            line-height: 23px;
+            font-weight: 700;
+            color: #000;
+            padding: 10px; }
+  .banner-area .apnt-form {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 65px 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+    .banner-area .apnt-form form {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 30px; }
+      .banner-area .apnt-form form .input-group {
+        display: inline-block; }
+      .banner-area .apnt-form form input[type="text"],
+      .banner-area .apnt-form form input[type="email"],
+      .banner-area .apnt-form form input[type="number"] {
+        border-bottom: 3px solid #db0;
+        padding: 12px;
+        width: 100%; }
+      .banner-area .apnt-form form select#location {
+        border-bottom: 3px solid #db0;
+        padding: 14px; }
+      .banner-area .apnt-form form input[type="submit"] {
+        background-color: #ddbb00;
+        border-radius: 40px;
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
-        line-height: 23px;
         font-weight: 700;
         color: #000;
-        padding: 10px; }
-  .banner .banner-img .apnt-form {
-    margin-top: 150px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 65px 0; }
-    .banner .banner-img .apnt-form form .input-group {
-      display: inline-block; }
-    .banner .banner-img .apnt-form form input[type="text"],
-    .banner .banner-img .apnt-form form input[type="email"],
-    .banner .banner-img .apnt-form form input[type="number"] {
-      border-bottom: 3px solid #db0;
-      padding: 12px;
-      margin-right: 10px; }
-    .banner .banner-img .apnt-form form select#location {
-      border-bottom: 3px solid #db0;
-      padding: 14px;
-      margin-right: 10px; }
-    .banner .banner-img .apnt-form form input[type="submit"] {
-      background-color: #ddbb00;
-      border-radius: 40px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      color: #000;
-      padding: 14px 58px;
-      border: 0px; }
+        padding: 14px 58px;
+        border: 0px; }
 
 /*===================================================
                       SERVICES AREA
@@ -1140,64 +1149,57 @@ input[type=number]::-webkit-outer-spin-button {
             font-weight: 400;
             line-height: 24px;
             color: #707070; }
-    .pricing-area .pest-prising-table .service-item-basic,
     .pricing-area .pest-prising-table .service-item-standard,
+    .pricing-area .pest-prising-table .service-item-basic,
     .pricing-area .pest-prising-table .service-item-premium {
       -webkit-transition: all 0.5s ease;
       -o-transition: all 0.5s ease;
       transition: all 0.5s ease; }
-      .pricing-area .pest-prising-table .service-item-basic:hover,
       .pricing-area .pest-prising-table .service-item-standard:hover,
+      .pricing-area .pest-prising-table .service-item-basic:hover,
       .pricing-area .pest-prising-table .service-item-premium:hover {
         background-color: #6389ec26; }
-      .pricing-area .pest-prising-table .service-item-basic ul,
       .pricing-area .pest-prising-table .service-item-standard ul,
+      .pricing-area .pest-prising-table .service-item-basic ul,
       .pricing-area .pest-prising-table .service-item-premium ul {
         position: relative; }
-        .pricing-area .pest-prising-table .service-item-basic ul.price-heading,
         .pricing-area .pest-prising-table .service-item-standard ul.price-heading,
+        .pricing-area .pest-prising-table .service-item-basic ul.price-heading,
         .pricing-area .pest-prising-table .service-item-premium ul.price-heading {
-          list-style: none;
-          display: -ms-grid;
-          display: grid;
-          -ms-grid-rows: 1fr;
-          grid-template-rows: 1fr; }
-          .pricing-area .pest-prising-table .service-item-basic ul.price-heading li,
+          list-style: none; }
           .pricing-area .pest-prising-table .service-item-standard ul.price-heading li,
+          .pricing-area .pest-prising-table .service-item-basic ul.price-heading li,
           .pricing-area .pest-prising-table .service-item-premium ul.price-heading li {
             padding: 30px 40px; }
-            .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head,
             .pricing-area .pest-prising-table .service-item-standard ul.price-heading li.head,
+            .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head,
             .pricing-area .pest-prising-table .service-item-premium ul.price-heading li.head {
-              -ms-grid-row: 1;
-              -ms-grid-row-span: 2;
-              grid-row: 1/span 2;
               display: -ms-grid;
               display: grid;
               -ms-grid-columns: 1fr 1fr;
               grid-template-columns: 1fr 1fr; }
-              .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .title-time,
               .pricing-area .pest-prising-table .service-item-standard ul.price-heading li.head .title-time,
+              .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .title-time,
               .pricing-area .pest-prising-table .service-item-premium ul.price-heading li.head .title-time {
                 text-align: left; }
-                .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .title-time p,
                 .pricing-area .pest-prising-table .service-item-standard ul.price-heading li.head .title-time p,
+                .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .title-time p,
                 .pricing-area .pest-prising-table .service-item-premium ul.price-heading li.head .title-time p {
                   font-size: 16px;
                   font-family: 'Lato', sans-serif;
                   font-weight: 400;
                   line-height: 24px;
                   color: #fff; }
-                  .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .title-time p.title,
                   .pricing-area .pest-prising-table .service-item-standard ul.price-heading li.head .title-time p.title,
+                  .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .title-time p.title,
                   .pricing-area .pest-prising-table .service-item-premium ul.price-heading li.head .title-time p.title {
                     font-size: 20px;
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 700;
                     line-height: 24px;
                     color: #fff; }
-              .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .price,
               .pricing-area .pest-prising-table .service-item-standard ul.price-heading li.head .price,
+              .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .price,
               .pricing-area .pest-prising-table .service-item-premium ul.price-heading li.head .price {
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -1208,16 +1210,16 @@ input[type=number]::-webkit-outer-spin-button {
                 -webkit-box-align: center;
                 -ms-flex-align: center;
                 align-items: center; }
-                .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .price p,
                 .pricing-area .pest-prising-table .service-item-standard ul.price-heading li.head .price p,
+                .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .price p,
                 .pricing-area .pest-prising-table .service-item-premium ul.price-heading li.head .price p {
                   font-size: 32px;
                   font-family: 'Montserrat', sans-serif;
                   font-weight: 700;
                   line-height: 24px;
                   color: #fff; }
-        .pricing-area .pest-prising-table .service-item-basic ul.services,
         .pricing-area .pest-prising-table .service-item-standard ul.services,
+        .pricing-area .pest-prising-table .service-item-basic ul.services,
         .pricing-area .pest-prising-table .service-item-premium ul.services {
           list-style: none;
           display: -ms-grid;
@@ -1226,38 +1228,38 @@ input[type=number]::-webkit-outer-spin-button {
           grid-template-rows: repeat(7, 1fr);
           border: 1px solid #ddd;
           padding-bottom: 60px; }
-          .pricing-area .pest-prising-table .service-item-basic ul.services li,
           .pricing-area .pest-prising-table .service-item-standard ul.services li,
+          .pricing-area .pest-prising-table .service-item-basic ul.services li,
           .pricing-area .pest-prising-table .service-item-premium ul.services li {
             padding-left: 30px;
             padding-right: 30px;
             padding-top: 40px;
             text-align: center; }
-            .pricing-area .pest-prising-table .service-item-basic ul.services li.correct p,
             .pricing-area .pest-prising-table .service-item-standard ul.services li.correct p,
+            .pricing-area .pest-prising-table .service-item-basic ul.services li.correct p,
             .pricing-area .pest-prising-table .service-item-premium ul.services li.correct p {
               font-size: 16px;
               font-family: 'Lato', sans-serif;
               font-weight: 400;
               line-height: 24px;
               color: #399f06; }
-            .pricing-area .pest-prising-table .service-item-basic ul.services li.wrong p,
             .pricing-area .pest-prising-table .service-item-standard ul.services li.wrong p,
+            .pricing-area .pest-prising-table .service-item-basic ul.services li.wrong p,
             .pricing-area .pest-prising-table .service-item-premium ul.services li.wrong p {
               font-size: 16px;
               font-family: 'Lato', sans-serif;
               font-weight: 400;
               line-height: 24px;
               color: #f02020; }
-            .pricing-area .pest-prising-table .service-item-basic ul.services li.button,
             .pricing-area .pest-prising-table .service-item-standard ul.services li.button,
+            .pricing-area .pest-prising-table .service-item-basic ul.services li.button,
             .pricing-area .pest-prising-table .service-item-premium ul.services li.button {
               position: absolute;
               bottom: -12px;
               left: 0;
               right: 0; }
-              .pricing-area .pest-prising-table .service-item-basic ul.services li.button a,
               .pricing-area .pest-prising-table .service-item-standard ul.services li.button a,
+              .pricing-area .pest-prising-table .service-item-basic ul.services li.button a,
               .pricing-area .pest-prising-table .service-item-premium ul.services li.button a {
                 padding: 15px 40px;
                 border: 1px solid #ddd;
@@ -1272,8 +1274,8 @@ input[type=number]::-webkit-outer-spin-button {
                 -webkit-transition: all 0.5s ease;
                 -o-transition: all 0.5s ease;
                 transition: all 0.5s ease; }
-                .pricing-area .pest-prising-table .service-item-basic ul.services li.button a:hover,
                 .pricing-area .pest-prising-table .service-item-standard ul.services li.button a:hover,
+                .pricing-area .pest-prising-table .service-item-basic ul.services li.button a:hover,
                 .pricing-area .pest-prising-table .service-item-premium ul.services li.button a:hover {
                   background-color: #4af34ad4;
                   color: red; }
