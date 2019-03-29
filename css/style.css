@@ -1639,15 +1639,30 @@ input[type=number]::-webkit-outer-spin-button {
         font-weight: 400;
         line-height: 26px;
         color: #767676; }
-  .footer .footer-bottom .copyright p {
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    line-height: 26px;
-    color: #767676; }
-  .footer .footer-bottom .gotp-top p {
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    line-height: 26px;
-    color: #767676; }
+  .footer .footer-bottom {
+    padding: 20px 0;
+    background-color: #000; }
+    .footer .footer-bottom .copyright-goto {
+      position: relative; }
+      .footer .footer-bottom .copyright-goto .copyright p {
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        line-height: 26px;
+        color: #767676; }
+        .footer .footer-bottom .copyright-goto .copyright p span {
+          color: #db0; }
+      .footer .footer-bottom .copyright-goto .goto-top {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        text-align: center; }
+        .footer .footer-bottom .copyright-goto .goto-top i {
+          color: #db0;
+          font-size: 12px; }
+        .footer .footer-bottom .copyright-goto .goto-top p {
+          font-size: 12px;
+          font-family: 'Lato', sans-serif;
+          font-weight: 900;
+          color: #db0;
+          line-height: 0; }

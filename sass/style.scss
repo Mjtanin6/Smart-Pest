@@ -2301,29 +2301,49 @@ input[type=number]::-webkit-outer-spin-button {
         }
     }
     .footer-bottom {
+        padding: 20px 0;
+        background-color: #000;
 
-        .copyright {
+        .copyright-goto {
+            position: relative;
+            
+            .copyright {
 
-            p {
-                font-size: 16px;
-                font-family: 'Lato', sans-serif;
-                font-weight: 400;
-                line-height: 26px;
-                color: #767676;
+                p {
+                    font-size: 16px;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 400;
+                    line-height: 26px;
+                    color: #767676;
 
+                    span {
+                        color: #db0;
+                    }
+
+                }
             }
-        }
-        .gotp-top {
+            .goto-top {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                text-align: center;
+                
 
-            i {}
-            p {
-                font-size: 16px;
-                font-family: 'Lato', sans-serif;
-                font-weight: 400;
-                line-height: 26px;
-                color: #767676;
+                i {
+                    color: #db0;
+                    font-size: 12px;
+                }
+                p {
+                    font-size: 12px;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 900;
+                    color: #db0;
+                    line-height: 0;
 
+                }
             }
+
         }
+
     }
 }
