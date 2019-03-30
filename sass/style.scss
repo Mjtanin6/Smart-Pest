@@ -1644,9 +1644,10 @@ input[type=number]::-webkit-outer-spin-button {
 
                         &.head {
                             display: grid;
-                            grid-template-columns: 1fr 1fr;
+                            grid-template-columns: repeat(3, 1fr);
                             .title-time {
                                 text-align: left;
+                                grid-column: 1/span 2;
 
                                 p {
                                     font-size: 16px;
