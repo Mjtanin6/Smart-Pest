@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-
+@import url("about.css");
 
 /*
 =====================================================
@@ -72,7 +72,7 @@ input[type=number]::-webkit-outer-spin-button {
     background: #272727;
 }
 
-.com-heading-style {
+[class^='heading-'] {
     text-align: center;
     .title {
         text-align: center;
@@ -397,7 +397,7 @@ input[type=number]::-webkit-outer-spin-button {
   ====================================================*/
 .our-services {
     padding: 100px 0px 70px;
-    .heading {
+    .heading-services {
         .title {
             h1 {
                 color: #000;
@@ -567,7 +567,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding-top: 100px;
     padding-bottom: 100px;
 
-    .heading {
+    .heading-about {
         .title {
             h1 {
                 color: #fff;
@@ -723,7 +723,7 @@ input[type=number]::-webkit-outer-spin-button {
 .our-team {
     padding: 100px 0;
 
-    .heading {
+    .heading-team {
 
         .title {
 
@@ -1069,7 +1069,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding-top: 100px;
     padding-bottom: 100px;
 
-    .heading {
+    .heading-latest {
 
         .title {
 
@@ -1155,7 +1155,7 @@ input[type=number]::-webkit-outer-spin-button {
         padding-top: 100px;
         padding-bottom: 100px;
 
-        .heading {
+        .heading-score {
 
             .title {
 
@@ -1263,7 +1263,7 @@ input[type=number]::-webkit-outer-spin-button {
 .our-blog {
     padding: 100px 0;
 
-    .heading {
+    .heading-blog {
 
         .title {
 
@@ -1544,7 +1544,7 @@ input[type=number]::-webkit-outer-spin-button {
 .pricing-area {
     padding: 100px 0;
 
-    .heading {
+    .heading-pricing {
 
         .title {
 
@@ -2350,11 +2350,12 @@ input[type=number]::-webkit-outer-spin-button {
                     font-weight: 900;
                     color: #db0;
                     line-height: 0;
-
                 }
             }
-
         }
-
     }
 }
+
+/*================================================
+            other page area
+=================================================*/

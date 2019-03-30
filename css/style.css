@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("about.css");
 /*
 =====================================================
                       COMMON AREA
@@ -61,47 +62,47 @@ input[type=number]::-webkit-outer-spin-button {
   outline: none;
   background: #272727; }
 
-.com-heading-style {
+[class^='heading-'] {
   text-align: center; }
-  .com-heading-style .title {
+  [class^='heading-'] .title {
     text-align: center;
     position: relative;
     display: inline-block; }
-    .com-heading-style .title:after, .com-heading-style .title:before {
+    [class^='heading-'] .title:after, [class^='heading-'] .title:before {
       content: "";
       position: absolute;
       height: 1px;
       width: 24px;
       background-color: #ddbb00; }
-    .com-heading-style .title:before {
+    [class^='heading-'] .title:before {
       left: -30px;
       bottom: 16px; }
-    .com-heading-style .title:after {
+    [class^='heading-'] .title:after {
       right: -30px;
       bottom: 16px; }
-    .com-heading-style .title h1 {
+    [class^='heading-'] .title h1 {
       font-size: 32px;
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
       line-height: 24px;
       position: relative;
       display: inline-block; }
-      .com-heading-style .title h1:after, .com-heading-style .title h1:before {
+      [class^='heading-'] .title h1:after, [class^='heading-'] .title h1:before {
         content: "";
         position: absolute;
         height: 20px;
         width: 1px;
         background-color: #ddbb00; }
-      .com-heading-style .title h1:before {
+      [class^='heading-'] .title h1:before {
         left: -6px;
         bottom: 2px; }
-      .com-heading-style .title h1:after {
+      [class^='heading-'] .title h1:after {
         right: -6px;
         bottom: 2px; }
-  .com-heading-style .discription {
+  [class^='heading-'] .discription {
     text-align: center;
     margin: 60px 170px 30px; }
-    .com-heading-style .discription p {
+    [class^='heading-'] .discription p {
       font-size: 16px;
       font-family: 'Lato', sans-serif;
       font-weight: 400;
@@ -312,9 +313,9 @@ input[type=number]::-webkit-outer-spin-button {
   ====================================================*/
 .our-services {
   padding: 100px 0px 70px; }
-  .our-services .heading .title h1 {
+  .our-services .heading-services .title h1 {
     color: #000; }
-  .our-services .heading .discription p {
+  .our-services .heading-services .discription p {
     color: #767676; }
   .our-services .services-area .our-identity {
     border: 1px solid #ddd;
@@ -443,9 +444,9 @@ input[type=number]::-webkit-outer-spin-button {
   background: #000;
   padding-top: 100px;
   padding-bottom: 100px; }
-  .about .heading .title h1 {
+  .about .heading-about .title h1 {
     color: #fff; }
-  .about .heading .discription p {
+  .about .heading-about .discription p {
     color: #767676; }
   .about .slider-forg .slick-prev {
     left: 10px; }
@@ -551,7 +552,7 @@ input[type=number]::-webkit-outer-spin-button {
 ====================================================*/
 .our-team {
   padding: 100px 0; }
-  .our-team .heading .discription {
+  .our-team .heading-team .discription {
     margin-bottom: 65px; }
   .our-team .team-slider .slider .slick-prev {
     left: -70px; }
@@ -858,9 +859,9 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: rgba(0, 0, 0, 0.8);
     padding-top: 100px;
     padding-bottom: 100px; }
-    .our-score .our-score-obg .heading .title h1 {
+    .our-score .our-score-obg .heading-score .title h1 {
       color: #fff; }
-    .our-score .our-score-obg .heading .discription P {
+    .our-score .our-score-obg .heading-score .discription P {
       color: #767676; }
     .our-score .our-score-obg .img-scorebord {
       display: -ms-grid;
@@ -1671,3 +1672,7 @@ input[type=number]::-webkit-outer-spin-button {
           font-weight: 900;
           color: #db0;
           line-height: 0; }
+
+/*================================================
+            other page area
+=================================================*/
