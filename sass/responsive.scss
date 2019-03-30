@@ -1,6 +1,6 @@
 /*@media only screen and (min-width: 320px) and (max-width: 480px)  {}*/
 
-@media only screen and (max-width: 1024px)  {
+@media only screen and (min-width: 992px) and (max-width: 1280px)  {
 	.slick-prev,
 	.slick-next {
 	    width: 55px;
@@ -82,7 +82,7 @@
 	}
 }
 
-@media only screen and (max-width: 768px)  {
+@media only screen and (min-width: 768px) and (max-width: 991px)  {
 	.header .top-bar .quick-contact li a {
 	    font-size: 10px;
 	}
@@ -119,6 +119,7 @@
 	}
 	.banner-area .banner .banner-img .banner-content {
 	    padding-bottom: 175px;
+	    margin-left: 100px;
 	}
 	.banner-area .apnt-form form input[type="submit"] {
 	    padding: 8px 40px;
@@ -138,6 +139,22 @@
 	.testimonial .tem-obg .slider.tem-slider .single-person {
 	    padding: 120px 0 100px;
 	}
+	.sendsms .sendsms-obg .sendsms-text-img .text-area {
+	    padding: 53px 0;
+	}
+	.sendsms .sendsms-obg .sendsms-text-img .our-img {
+	    position: relative;
+	}
+	.sendsms .sendsms-obg .sendsms-text-img .our-img img {
+	    width: 100%;
+	    bottom: 0;
+	    position: absolute;
+	}
+	.latest-project .lat-pro-cat-img .latest-images .image a span:after {
+	    font-size: 25px;
+	    padding: 8px 15px;
+	}
+
 	.pricing-area .pest-prising-table .services-list ul.price-heading li.head .price p, .pricing-area .pest-prising-table .service-item-standard ul.price-heading li.head .price p, .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .price p, .pricing-area .pest-prising-table .service-item-premium ul.price-heading li.head .price p {
 	    font-size: 20px;
 	}
@@ -187,11 +204,106 @@
 	    width: 150px;
 	    height: 35px;
 	}
+
+	.footer .footer-top .smart-pest .icon-title i {
+	    height: 40px;
+	    width: 55px;
+        margin-top: 0px;
+	}
 }
 
-@media only screen and (max-width: 425px)  {
+@media only screen and (min-width: 425px) and (max-width: 767px)  {
 	.header .navbar {
 	    position: inherit;
+	    bottom: 0;
+	    z-index: 0;
+	    padding: 30px;
+	    background: #db0;
+	    margin: 0;
+	}
+	.navbar-toggle .icon-bar {
+	    display: block;
+	    width: 22px;
+	    height: 2px;
+	    background: black;
+	    border-radius: 1px;
+	}
+	div#bs-example-navbar-collapse-1 {
+	    border: 0;
+	}
+
+	.navbar-toggle {
+	    border: 1px solid black;
+	}
+	.latest-project .lat-pro-cat-img .latest-images .image a span:after {
+	    font-size: 20px;
+	    padding: 10px 15px;
+	}
+	.sendsms .sendsms-obg .sendsms-text-img .text-area {
+	    padding: 53px 0;
+	}
+	.sendsms .sendsms-obg .sendsms-text-img .our-img {
+	    position: relative;
+	}
+	.sendsms .sendsms-obg .sendsms-text-img .our-img img {
+	    width: 100%;
+	    bottom: 0;
+	    position: absolute;
+	}
+	.footer .footer-top .smart-pest .icon-title i {
+	    height: 40px;
+	    width: 55px;
+        margin-top: 0px;
+	}
+		.contuct-area .contucts-methord {
+	    grid-template-columns: repeat(12, 1fr);
+	    grid-template-rows: 1fr 1fr;
+	}
+	.contuct-area .contucts-methord .phone {
+	    grid-column: 1/4;
+	    grid-row: 1;
+	}
+	.contuct-area .contucts-methord .email {
+	    grid-column: 4/9;
+	    grid-row: 1;
+	}
+	.contuct-area .contucts-methord .location {
+	    grid-column: 9/-1;
+	    grid-row: 1;
+	}
+	.contuct-area .contucts-methord button.contuctus {
+	    grid-column: 5/-1;
+	    grid-row: 2;
+	    width: 150px;
+	    height: 35px;
+	}
+	.question .qut-obg .fqut-area {
+	    grid-template-columns: inherit;
+	    grid-template-rows: repeat(2, 1fr);
+	    grid-gap: 30px;
+	}
+	.question .qut-obg .fqut-area .send-email {
+	    justify-content: center;
+	    grid-column: inherit;
+	}
+	.question .qut-obg .fqut-area .text {
+	    grid-column: inherit;
+	    text-align: center;
+	}
+		.pricing-area .pest-prising-table .services-list ul.price-heading li.head .price p, .pricing-area .pest-prising-table .service-item-standard ul.price-heading li.head .price p, .pricing-area .pest-prising-table .service-item-basic ul.price-heading li.head .price p, .pricing-area .pest-prising-table .service-item-premium ul.price-heading li.head .price p {
+	    font-size: 20px;
+	}
+	.pricing-area .pest-prising-table .service-item-basic ul.price-heading li, .pricing-area .pest-prising-table .service-item-standard ul.price-heading li, .pricing-area .pest-prising-table .service-item-premium ul.price-heading li, .pricing-area .pest-prising-table .services-list ul.price-heading li {
+	    padding: 14px;
+	}
+	.pricing-area .pest-prising-table .service-item-basic ul.services li.button a, .pricing-area .pest-prising-table .service-item-standard ul.services li.button a, .pricing-area .pest-prising-table .service-item-premium ul.services li.button a {
+	    padding: 10px;
+        font-size: 10px;
+	    border-radius: 20px;
+	}
+	.pricing-area .pest-prising-table .services-list ul.services li {
+	    padding-left: 18px;
+	    padding-top: 30px;
 	}
 }
 
