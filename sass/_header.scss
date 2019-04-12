@@ -1,0 +1,162 @@
+  /*===================================================
+                      HEADER AREA
+  ====================================================*/
+
+  .header {
+    position: relative;
+    .top-bar {
+      background-color: #202020;
+      .logo {
+        background-color: $primary;
+        position: relative;
+        padding: 20px 0 40px;
+        a{
+            &.navbar-brand {
+                height: inherit;
+                float: none;
+                padding: 0;
+            }
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            right: 100%;
+            background: $primary;
+            height: 100%;
+            width: 10000px;
+        }
+      }
+      .quick-contact {
+            transform: translateY(20px);
+        li {
+          display: inline-flex;
+          align-items: center;
+          padding: 0px;
+          &.phone {
+            padding-left: 30px;
+            padding-right: 30px;
+            position: relative;
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                width: 1px;
+                height: 100%;
+                background: $gray;
+                z-index: 999;
+            }
+            &:before {
+                left: 15px;
+            }
+            &:after {
+                right: 15px;
+            }
+          }
+          .icon{
+            height: 42px;
+            width: 42px;
+            border: 2px solid #4a4a4a;
+            border-radius: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $primary;
+            margin-right: 10px;
+            span {}
+          }
+          a {
+            color: #fff;
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                color: $primary;
+            }
+          }
+        }
+      }
+    }
+    .navbar {
+        position: absolute;
+        bottom: -57px;
+        border: 0px;
+        width: 100%;
+        display: block;
+        min-height: initial;
+        border-radius: 0;
+        z-index: 999999;
+        .navbar-header {
+            .logo {
+                a{}
+            }
+        }
+        .collapse {
+            &.navbar-collapse {
+                background-color: #fff;
+                display: flex!important;
+                justify-content: space-between;
+                padding: 0;
+                &:before,
+                &:after {
+                    content: none;
+                }
+            }
+            ul {
+                li {
+                    &.dropdown {
+                        ul {
+                            li {
+                                a {
+                                    padding: 10px!important;
+                                }
+                            }
+                        }
+                        &:hover ul{
+                            display: block;
+                        }
+                        ul {}
+                    }
+                    &.active {
+                        a{
+                            color:#ddbb00;
+                        }
+
+                        }
+                    &.search {
+                        position: relative;
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            background: #ddd;
+                            width: 1px;
+                            height: 60%;
+                            bottom: 13px;
+                            right: 0;
+                        }
+                    }
+                    a {
+                        color: #202020;
+                        font-size: 16px;
+                        font-family: 'Lato', sans-serif;
+                        font-weight: 400;
+                        padding: 25px 15px;
+                        transition: all 0.5s ease;
+                        &:hover,
+                        &:focus{
+                            background-color: #ddd;
+                        }
+                        span {
+                            &.app{
+                                margin-left:5px;
+                            }
+                        }
+                    }
+                    &.appointment{
+                        background-color: #ddbb00;
+                    }
+                }
+            }
+        }
+    }
+}

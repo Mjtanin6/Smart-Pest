@@ -1,0 +1,35 @@
+/* =======================================
+                 Hero area
+ ========================================*/
+.heading-hero {
+    background-image: url('../images/overview.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .title-obg {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 59px 0;
+
+        .title {
+            
+            h1 {
+                color: #fff;
+                @extend %sec-title;
+            }
+        }
+
+    }
+    .location-bar {
+        background-color: #000;
+        padding: 7px 0;
+
+        p {
+            @extend %sec-dis;
+            color: #eee;
+
+            span {
+                color: $primary;
+            }
+        }
+    }
+}
