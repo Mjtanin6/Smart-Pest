@@ -1,0 +1,64 @@
+/*===================================================
+                LATEST-PRIJECT AREA
+====================================================*/
+
+.galary {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .galary-img {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        .image {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+            a {
+
+                span {
+
+                    &:after {
+                        content: "\f0b2";
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        color: #fff;
+                        font-size: 30px;
+                        background-color: #db0;
+                        padding: 14px 20px;
+
+                    }
+                }
+            }
+        }
+    }
+    .load-more {
+        text-align: center;
+        padding: 30px 0;
+        margin-top: 45px;
+
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 24px;
+            color: #000;
+            background-color: #dd0;
+            padding: 15px 30px;
+            border-radius: 30px;
+            transition: all 0.5s ease;
+
+            &:hover {
+                background-color: #0f0;
+            }
+        }
+    }
+}
